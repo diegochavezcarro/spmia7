@@ -36,11 +36,20 @@
 # Tests with Postman:
 1.
 http://192.168.99.100:8901/auth/oauth/token using POST, in Authorization use Basic Auth with  Username: eagleeye and Password: thisissecret in Body use form-data filling the following:
-grant_type:password
-scope:webclient
-username:john.carnell
+grant_type:password,
+scope:webclient,
+username:john.carnell,
 password:password1
 
+2. With access_token obtained in last step, access http://192.168.99.100:8901/auth/user with GET and a header with Authorization: Bearer 354d4dbb-aa9a-4de2-a186-afcea5d8fbd2
+
+3. Access http://192.168.99.100:5555/api/organization/v1/organizations/e254f8c-c442-4ebe-a82a-e2fc1d1ff78a with GET and Authorization header
+
+4. Same as last step but with DELETE, access denied
+
+5. Login as step 1 but with username:william.woodward and password:password2
+
+6. Try step 4 with new access_token
 
 # Introduction
 Welcome to Spring Microservices in Action, Chapter 7.  Chapter 7 demonstrates how to build security with your services using Spring Cloud Security.  In this chapter we build an OAUth2 Authentication service using OAuth2.  This chapter has two branches of code.
