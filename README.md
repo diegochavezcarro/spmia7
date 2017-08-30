@@ -1,4 +1,4 @@
-#If you need modifications (in your own repo) follow the next example steps:
+# If you need modifications (in your own repo) follow the next example steps:
 1. Enter the right directory 
 cd /c/repos/GitHub/spmia7
 2. Generate build and Create Docker images
