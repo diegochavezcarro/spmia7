@@ -14,12 +14,19 @@
 4. If you want to push them to your docker hub (they would be on local docker hub instead):
 
 **docker push diegochavezcarro/tmx-zuulsvr:chapter7**
+
 **docker push diegochavezcarro/tmx-specialroutes-service:chapter7**
+
 **docker push diegochavezcarro/tmx-eurekasvr:chapter7**
+
 **docker push diegochavezcarro/tmx-orgservice-new:chapter7**
+
 **docker push diegochavezcarro/tmx-organization-service:chapter7**
+
 **docker push diegochavezcarro/tmx-licensing-service:chapter7**
+
 **docker push diegochavezcarro/tmx-confsvr:chapter7**
+
 **docker push diegochavezcarro/tmx-authentication-service:chapter7**
 
 5. deploy containers using docker compose:
