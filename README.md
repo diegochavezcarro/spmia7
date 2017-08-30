@@ -1,22 +1,30 @@
 # If you need modifications (in your own repo) follow the next example steps:
 1. Enter the right directory 
-cd /c/repos/GitHub/spmia7
+
+**cd /c/repos/GitHub/spmia7**
+
 2. Generate build and Create Docker images
-mvn clean package docker:build
+
+**mvn clean package docker:build**
+
 3. Show created images:
-docker images
+
+**docker images**
+
 4. If you want to push them to your docker hub (they would be on local docker hub instead):
-docker push diegochavezcarro/tmx-zuulsvr:chapter7
-docker push diegochavezcarro/tmx-specialroutes-service:chapter7
-docker push diegochavezcarro/tmx-eurekasvr:chapter7
-docker push diegochavezcarro/tmx-orgservice-new:chapter7
-docker push diegochavezcarro/tmx-organization-service:chapter7
-docker push diegochavezcarro/tmx-licensing-service:chapter7
-docker push diegochavezcarro/tmx-confsvr:chapter7
-docker push diegochavezcarro/tmx-authentication-service:chapter7
+
+**docker push diegochavezcarro/tmx-zuulsvr:chapter7**
+**docker push diegochavezcarro/tmx-specialroutes-service:chapter7**
+**docker push diegochavezcarro/tmx-eurekasvr:chapter7**
+**docker push diegochavezcarro/tmx-orgservice-new:chapter7**
+**docker push diegochavezcarro/tmx-organization-service:chapter7**
+**docker push diegochavezcarro/tmx-licensing-service:chapter7**
+**docker push diegochavezcarro/tmx-confsvr:chapter7**
+**docker push diegochavezcarro/tmx-authentication-service:chapter7**
 
 5. deploy containers using docker compose:
-docker-compose -f docker/common/docker-compose.yml up
+
+**docker-compose -f docker/common/docker-compose.yml up**
 
 
 # Introduction
