@@ -33,6 +33,14 @@
 
 **docker-compose -f docker/common/docker-compose.yml up**
 
+# Tests with Postman:
+1.
+http://192.168.99.100:8901/auth/oauth/token using POST, in Authorization use Basic Auth with  Username: eagleeye and Password: thisissecret in Body use form-data filling the following:
+grant_type:password
+scope:webclient
+username:john.carnell
+password:password1
+
 
 # Introduction
 Welcome to Spring Microservices in Action, Chapter 7.  Chapter 7 demonstrates how to build security with your services using Spring Cloud Security.  In this chapter we build an OAUth2 Authentication service using OAuth2.  This chapter has two branches of code.
